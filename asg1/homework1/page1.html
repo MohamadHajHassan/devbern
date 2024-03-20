@@ -22,15 +22,43 @@
         </table>
 
         <br />
-        <form>
-            <label for="name">name:</label>
-            <input type="text" name="name" />
+        <form action="">
+            <label for="nameId">name:</label>
+            <input type="text" name="name" id="nameId" />
             <br />
+
+            <label for="dateId">date:</label>
+            <input type="date" name="date" id="dateId" />
             <br />
-            <label for="date">date:</label>
-            <input type="date" name="date" />
+
+            <label for="ratingId">rating:</label>
+            <select name="rating" id="ratingId">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
             <br />
-            <input type="submit" value="Add" />
+
+            <input
+                type="checkbox"
+                name="homework"
+                id="homeworkId"
+                title="This checkbox should be checked if there was a homework and left blank If there wasn't" />
+            <label for="Homewor kId">Was there a homework?</label>
+            <br />
+
+            <label>Language of instruction</label>
+            <br />
+            <input type="radio" name="language" value="fr" id="fr" />
+            <label for="fr">Fr</label>
+            <br />
+            <input type="radio" name="language" value="en" id="en" />
+            <label for="en">En</label>
+            <br />
+
+            <input type="submit" value="Submit" />
         </form>
     </body>
 </html>
