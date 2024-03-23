@@ -21,6 +21,7 @@ a {
 /* End of CSS Resrt */
 
 /* Header Styles */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -67,3 +68,40 @@ header nav a:hover {
 }
 
 /* End of Header Styles */
+
+/* Footer Styles */
+
+footer {
+    background-color: #f0f0f0;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+footer p {
+    color: #333;
+    font-size: 0.8rem;
+    margin-left: 10rem;
+}
+
+footer ul {
+    display: flex;
+    margin-right: 10rem;
+}
+
+footer ul li {
+    margin-right: 1rem;
+}
+
+footer ul a {
+    color: #000;
+    font-weight: bold;
+}
+
+footer ul a:hover {
+    color: #444;
+}
+
+/* End of Footer Styles */
