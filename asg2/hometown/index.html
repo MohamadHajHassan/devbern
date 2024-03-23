@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Discover Hermel, Lebanon</title>
+    </head>
+    <body>
+        <header>
+            <h1>Explore the Enchanting City of Hermel, Lebanon</h1>
+            <img src="assets/hermel.jpg" alt="Hermel city" />
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About Hermel</a></li>
+                <li><a href="places.html">Places to Visit</a></li>
+                <li><a href="todo.html">Things to Do</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="about">
+                <h2>Unveiling the Beauty of Hermel</h2>
+                <p>
+                    Nestled amidst the majestic mountains of northeastern
+                    Lebanon lies the captivating city of Hermel. Steeped in
+                    history and brimming with natural splendor, Hermel offers an
+                    unforgettable experience for travelers seeking a unique
+                    blend of cultural immersion and outdoor adventure. From
+                    ancient citadels whispering tales of bygone eras to vibrant
+                    souqs showcasing local treasures, Hermel promises a journey
+                    that will enthrall your senses.
+                </p>
+                <figure>
+                    <img
+                        src="assets/hermel-mountain.jpg"
+                        alt="Hermel mountain" />
+                    <figcaption>
+                        The breathtaking mountain ranges that embrace Hermel
+                    </figcaption>
+                </figure>
+                <p>Places to visit in hermel: <a href="places.html"> Read more.</a></p>
+                <p>Things to do in hermel: <a href="todo.html"> Read more.</a></p>
+            </section>
+
+            <section id="contact">
+                <h2>Tell us what do you think about our city.</h2>
+                <form action="">
+                    <fieldset>
+                        <legend>Contact Form</legend>
+                        <label for="nameId">Name:</label>
+                        <input type="text" name="name" id="nameId" />
+                        <br />
+
+                        <label for="emailId">Email:</label>
+                        <input type="email" name="email" id="emailId" />
+                        <br />
+
+                        <label for="wish-to-visit">Would you consider visiting Hermel?</label>
+                        <br>
+                        <input type="radio" name="wish-to-visit" id="wish-to-visit" >Yes</input>
+                        <br>
+                        <input type="radio" name="wish-to-visit" id="wish-to-visit" >No</input>
+                        <br>
+
+                        <label for="messageId">Message:</label>
+                        <textarea
+                            name="message"
+                            id="messageId"
+                            cols="30"
+                            rows="10"></textarea>
+                        <br />
+
+                        <input type="submit" value="Submit" />
+                    </fieldset>
+            </section>
+        </main>
+    </body>
+</html>
