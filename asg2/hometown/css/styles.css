@@ -105,3 +105,25 @@ footer ul a:hover {
 }
 
 /* End of Footer Styles */
+
+/* Hero Styles */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    margin-top: 10vh;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-left: 10rem;
+}
+
+.hero img {
+    width: 500px;
+    height: auto;
+    margin-right: 10rem;
+    border-radius: 50px;
+}
+
+/* End of Hero Styles */
