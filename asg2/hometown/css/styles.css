@@ -244,3 +244,39 @@ footer ul a:hover {
     color: #777;
     margin: 0.4rem 1rem;
 }
+
+/* End of Places Styles */
+
+/* Things to do Styles */
+.todo h2 {
+    font-size: 2rem;
+    margin: 10rem 10rem 5rem;
+}
+
+.todo > p {
+    margin: 2rem 10rem;
+    font-size: 1.4rem;
+}
+
+.todo h3 {
+    font-size: 1.5rem;
+    margin: 0 0 1rem;
+}
+.todo ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin: 0 10rem;
+}
+
+.todo li {
+    margin-bottom: 2rem;
+    padding: 1rem 1rem 1rem 0;
+    align-items: center;
+}
+
+.todo li p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
