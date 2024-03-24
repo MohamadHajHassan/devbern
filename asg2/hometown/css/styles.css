@@ -192,3 +192,55 @@ footer ul a:hover {
 }
 
 /* End of Links Styles */
+
+/* Places Styles */
+.places h2 {
+    font-size: 2rem;
+    margin: 10rem 10rem 5rem;
+}
+
+.places ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin: 0 10rem;
+}
+
+.places li {
+    display: flex;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.places li h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.places li p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.places li figure {
+    height: 50vh;
+    margin-right: 2rem;
+}
+
+.places li div {
+    margin-right: 2rem;
+}
+
+.places li img {
+    width: 50vh;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.places li figcaption {
+    font-size: 1rem;
+    color: #777;
+    margin: 0.4rem 1rem;
+}
