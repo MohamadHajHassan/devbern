@@ -280,3 +280,80 @@ footer ul a:hover {
     color: #555;
     line-height: 1.6;
 }
+
+/* End of Things to do Styles */
+
+/* Contact Styles */
+
+.contact h2 {
+    font-size: 2rem;
+    margin: 10rem 10rem 2rem;
+}
+
+.contact form {
+    margin: 0 10rem;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.contact fieldset {
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.contact legend {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    height: 3rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact textarea {
+    height: 10rem;
+}
+
+.contact .radio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact .radio label {
+    display: inline;
+    margin: 0 4rem 0 0.5rem;
+}
+
+.contact placeholder {
+    color: #777;
+}
+
+.contact input[type="submit"] {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* End of Contact Styles */
