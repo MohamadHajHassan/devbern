@@ -29,6 +29,10 @@ body {
 
 /* Header Styles */
 
+#header {
+    height: 20vh;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -40,11 +44,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 10;
-    height: 20vh;
-}
-
-header + * {
-    margin-top: 20vh;
+    height: 100vh;
 }
 
 header img {
@@ -119,7 +119,6 @@ footer ul a:hover {
     justify-content: space-between;
     align-items: center;
     height: 80vh;
-    margin-top: 10vh;
 }
 .hero h1 {
     font-size: 3rem;
@@ -203,7 +202,7 @@ footer ul a:hover {
 /* Places Styles */
 .places h2 {
     font-size: 2rem;
-    margin: 10rem 10rem 5rem;
+    margin: 5rem 10rem 5rem;
 }
 
 .places ul {
@@ -257,7 +256,7 @@ footer ul a:hover {
 /* Things to do Styles */
 .todo h2 {
     font-size: 2rem;
-    margin: 10rem 10rem 5rem;
+    margin: 5rem 10rem 5rem;
 }
 
 .todo > p {
@@ -294,7 +293,7 @@ footer ul a:hover {
 
 .contact h2 {
     font-size: 2rem;
-    margin: 10rem 10rem 2rem;
+    margin: 5rem 10rem 2rem;
 }
 
 .contact form {
