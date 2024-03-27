@@ -77,6 +77,9 @@ header nav a:hover {
 /* End of Header Styles */
 
 /* Footer Styles */
+#footer {
+    height: 15vh;
+}
 
 footer {
     background-color: #f0f0f0;
@@ -84,7 +87,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 15vh;
+    height: 100vh;
 }
 
 footer p {
