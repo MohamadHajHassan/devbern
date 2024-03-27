@@ -31,6 +31,14 @@ body {
 
 #header {
     height: 20vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#header + * {
+    margin-top: 20vh;
 }
 
 header {
@@ -39,11 +47,7 @@ header {
     align-items: center;
     padding: 1rem 2rem;
     background-color: #f0f0f0;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    z-index: 10;
     height: 100vh;
 }
 
@@ -205,7 +209,7 @@ footer ul a:hover {
 /* Places Styles */
 .places h2 {
     font-size: 2rem;
-    margin: 5rem 10rem 5rem;
+    margin: 10rem 10rem 5rem;
 }
 
 .places ul {
@@ -259,7 +263,7 @@ footer ul a:hover {
 /* Things to do Styles */
 .todo h2 {
     font-size: 2rem;
-    margin: 5rem 10rem 5rem;
+    margin: 10rem 10rem 5rem;
 }
 
 .todo > p {
@@ -296,7 +300,7 @@ footer ul a:hover {
 
 .contact h2 {
     font-size: 2rem;
-    margin: 5rem 10rem 2rem;
+    margin: 10rem 10rem 2rem;
 }
 
 .contact form {
