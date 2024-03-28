@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <iframe
+            id="header"
+            src="header.html"
+            width="100%"
+            frameborder="0"
+            scrolling="no"></iframe>
+
+        <main>
+            <section id="contact" class="contact">
+                <h2>
+                    Tell us what do you think about our city! We are looking
+                    forward to hearing from you.
+                </h2>
+
+                <form action="">
+                    <fieldset>
+                        <legend>Contact Form</legend>
+                        <label for="nameId">Name:</label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="nameId"
+                            placeholder="Enter your name here ..." />
+
+                        <label for="emailId">Email:</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="emailId"
+                            placeholder="Enter your email here ..." />
+                        <label for="wish-to-visit?"
+                            >Would you consider visiting Hermel?</label
+                        >
+                        <div class="radio">
+                            <div>
+                                <input
+                                    type="radio"
+                                    name="wish-to-visit"
+                                    id="visit" />
+                                <label for="visit">Yes</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="radio"
+                                    name="wish-to-visit"
+                                    id="dont-visit" />
+                                <label for="dont-visit">No</label>
+                            </div>
+                        </div>
+                        <label for="messageId">Message:</label>
+                        <textarea
+                            name="message"
+                            id="messageId"
+                            cols="30"
+                            rows="10"
+                            placeholder="Enter your message here ..."></textarea>
+
+                        <input type="submit" value="Submit" />
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <iframe
+            id="footer"
+            src="footer.html"
+            width="100%"
+            frameborder="0"
+            scrolling="no"></iframe>
+    </body>
+</html>
