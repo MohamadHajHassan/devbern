@@ -1,9 +1,11 @@
-let numberOfStairs = 0;
+const stairsInput = document.getElementById("stairs");
+const stairsOutput = document.getElementById("stairsOutput");
+
+const getInputNumberOfStairs = () => parseInt(stairsInput.value);
+const getNumberOfCurrentStairs = () => stairsOutput.rows.length;
 
 const buildStairs = () => {
-    const stairsInput = document.getElementById("stairs");
-    numberOfStairs = parseInt(stairsInput.value);
-    const stairsOutput = document.getElementById("stairsOutput");
+    const numberOfStairs = getInputNumberOfStairs();
     for (let index = 0; index < numberOfStairs; index++) {
         const row = stairsOutput.insertRow();
         for (let i = 0; i < index + 1; i++) {
@@ -12,6 +14,20 @@ const buildStairs = () => {
     }
 };
 
+const appendStairs = () => {
+    const numberOfStairs = getInputNumberOfStairs();
+    for (let index = 0; index < numberOfStairs; index++) {
+        const row = stairsOutput.insertRow();
+        const numberOfCurrentRows = getNumberOfCurrentStairs();
+        for (let i = 0; i < numberOfCurrentRows; i++) {
+            row.insertCell();
+        }
+    }
+};
+
 document.getElementById("buildButton").addEventListener("click", e => {
     buildStairs();
+});
+document.getElementById("appendButton").addEventListener("click", e => {
+    appendStairs();
 });
