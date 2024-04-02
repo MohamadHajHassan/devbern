@@ -369,4 +369,34 @@ footer ul a:hover {
     background-color: #45a049;
 }
 
+.contact table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.contact td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.contact button {
+    border-radius: 10px;
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact .deleteRow {
+    background-color: #f44336;
+}
+
+.contact input[type="submit"]:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
 /* End of Contact Styles */
