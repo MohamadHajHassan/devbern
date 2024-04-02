@@ -25,9 +25,18 @@ const appendStairs = () => {
     }
 };
 
+const destroyStairs = () => {
+    while (stairsOutput.rows.length > 0) {
+        stairsOutput.deleteRow(0);
+    }
+};
+
 document.getElementById("buildButton").addEventListener("click", e => {
     buildStairs();
 });
 document.getElementById("appendButton").addEventListener("click", e => {
     appendStairs();
+});
+document.getElementById("destroyButton").addEventListener("click", e => {
+    destroyStairs();
 });
