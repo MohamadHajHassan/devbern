@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stairs Builder</title>
+    </head>
+    <body>
+        <h1>Stair Builder</h1>
+        <form>
+            <label for="stairs">Number of Stairs (1-5):</label>
+            <input
+                type="number"
+                id="stairs"
+                name="stairs"
+                min="1"
+                max="5"
+                required />
+            <button type="submit">Build</button>
+            <button type="button" id="appendButton">Append</button>
+            <button type="button" id="destroyButton">Destroy</button>
+        </form>
+        <div id="stair-output"></div>
+    </body>
+</html>
