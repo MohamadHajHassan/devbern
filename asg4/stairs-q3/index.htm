@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/styles.css" />
         <title>Stairs Builder</title>
     </head>
     <body>
@@ -16,10 +17,11 @@
                 min="1"
                 max="5"
                 required />
-            <button type="submit">Build</button>
+            <button type="button" id="buildButton">Build</button>
             <button type="button" id="appendButton">Append</button>
             <button type="button" id="destroyButton">Destroy</button>
         </form>
-        <div id="stair-output"></div>
+        <table id="stairsOutput"></table>
+        <script type="module" src="scripts/scripts.js"></script>
     </body>
 </html>
