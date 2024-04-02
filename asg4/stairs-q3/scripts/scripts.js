@@ -1,5 +1,8 @@
 const stairsInput = document.getElementById("stairs");
 const stairsOutput = document.getElementById("stairsOutput");
+const buildButton = document.getElementById("buildButton");
+const appendButton = document.getElementById("appendButton");
+const destroyButton = document.getElementById("destroyButton");
 
 const getInputNumberOfStairs = () => parseInt(stairsInput.value);
 const getNumberOfCurrentStairs = () => stairsOutput.rows.length;
@@ -12,6 +15,7 @@ const buildStairs = () => {
             row.insertCell();
         }
     }
+    updateButtonsState();
 };
 
 const appendStairs = () => {
@@ -23,20 +27,28 @@ const appendStairs = () => {
             row.insertCell();
         }
     }
+    updateButtonsState();
 };
 
 const destroyStairs = () => {
     while (stairsOutput.rows.length > 0) {
         stairsOutput.deleteRow(0);
     }
+    updateButtonsState();
 };
 
-document.getElementById("buildButton").addEventListener("click", e => {
+const updateButtonsState = () => {
+    buildButton.disabled = getNumberOfCurrentStairs() > 0;
+    appendButton.disabled = getNumberOfCurrentStairs() == 0;
+    destroyButton.disabled = getNumberOfCurrentStairs() == 0;
+};
+
+buildButton.addEventListener("click", e => {
     buildStairs();
 });
-document.getElementById("appendButton").addEventListener("click", e => {
+appendButton.addEventListener("click", e => {
     appendStairs();
 });
-document.getElementById("destroyButton").addEventListener("click", e => {
+destroyButton.addEventListener("click", e => {
     destroyStairs();
 });
